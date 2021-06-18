@@ -1,180 +1,244 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <title>Aahar-App</title>
-  </head>
-  <body>
-    <header>
-      <nav class="navbar">
-        <div class="navbar__brand">
-          <img src="assets/logos.png" alt="logo" class="navbar__logo" />
-        </div>
-        <!-- <div class="navbar__nav__items"> 
-          <button class="nav__item button__primary">Order Food</button>
-        </div>
-      </nav>-->
-      <div class="wrapper">
-        <a class="cta" href="#">
-          <span>Order Food</span>
-          <span>
-          <svg width="30px" height="30px" viewBox="0 0 66 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-              <g id="arrow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                <path class="one" d="M40.1543933,3.89485454 L43.9763149,0.139296592 C44.1708311,-0.0518420739 44.4826329,-0.0518571125 44.6771675,0.139262789 L65.6916134,20.7848311 C66.0855801,21.1718824 66.0911863,21.8050225 65.704135,22.1989893 C65.7000188,22.2031791 65.6958657,22.2073326 65.6916762,22.2114492 L44.677098,42.8607841 C44.4825957,43.0519059 44.1708242,43.0519358 43.9762853,42.8608513 L40.1545186,39.1069479 C39.9575152,38.9134427 39.9546793,38.5968729 40.1481845,38.3998695 C40.1502893,38.3977268 40.1524132,38.395603 40.1545562,38.3934985 L56.9937789,21.8567812 C57.1908028,21.6632968 57.193672,21.3467273 57.0001876,21.1497035 C56.9980647,21.1475418 56.9959223,21.1453995 56.9937605,21.1432767 L40.1545208,4.60825197 C39.9574869,4.41477773 39.9546013,4.09820839 40.1480756,3.90117456 C40.1501626,3.89904911 40.1522686,3.89694235 40.1543933,3.89485454 Z" fill="#FFFFFF"></path>
-                <path class="two" d="M20.1543933,3.89485454 L23.9763149,0.139296592 C24.1708311,-0.0518420739 24.4826329,-0.0518571125 24.6771675,0.139262789 L45.6916134,20.7848311 C46.0855801,21.1718824 46.0911863,21.8050225 45.704135,22.1989893 C45.7000188,22.2031791 45.6958657,22.2073326 45.6916762,22.2114492 L24.677098,42.8607841 C24.4825957,43.0519059 24.1708242,43.0519358 23.9762853,42.8608513 L20.1545186,39.1069479 C19.9575152,38.9134427 19.9546793,38.5968729 20.1481845,38.3998695 C20.1502893,38.3977268 20.1524132,38.395603 20.1545562,38.3934985 L36.9937789,21.8567812 C37.1908028,21.6632968 37.193672,21.3467273 37.0001876,21.1497035 C36.9980647,21.1475418 36.9959223,21.1453995 36.9937605,21.1432767 L20.1545208,4.60825197 C19.9574869,4.41477773 19.9546013,4.09820839 20.1480756,3.90117456 C20.1501626,3.89904911 20.1522686,3.89694235 20.1543933,3.89485454 Z" fill="#FFFFFF"></path>
-                <path class="three" d="M0.154393339,3.89485454 L3.97631488,0.139296592 C4.17083111,-0.0518420739 4.48263286,-0.0518571125 4.67716753,0.139262789 L25.6916134,20.7848311 C26.0855801,21.1718824 26.0911863,21.8050225 25.704135,22.1989893 C25.7000188,22.2031791 25.6958657,22.2073326 25.6916762,22.2114492 L4.67709797,42.8607841 C4.48259567,43.0519059 4.17082418,43.0519358 3.97628526,42.8608513 L0.154518591,39.1069479 C-0.0424848215,38.9134427 -0.0453206733,38.5968729 0.148184538,38.3998695 C0.150289256,38.3977268 0.152413239,38.395603 0.154556228,38.3934985 L16.9937789,21.8567812 C17.1908028,21.6632968 17.193672,21.3467273 17.0001876,21.1497035 C16.9980647,21.1475418 16.9959223,21.1453995 16.9937605,21.1432767 L0.15452076,4.60825197 C-0.0425130651,4.41477773 -0.0453986756,4.09820839 0.148075568,3.90117456 C0.150162624,3.89904911 0.152268631,3.89694235 0.154393339,3.89485454 Z" fill="#FFFFFF"></path>
-              </g>
-            </svg>
-          </span> 
-        </a>
-      </div>
-    </header>
-
-    <main class="container">
-      <!-- Hero section -->
-      <section class="hero__container">
-        <div class="hero__image__container">
-          <img src="./assets/hero.jpg" alt="hero image" class="hero__image" />
-        </div>
-        <div class="hero__description">
-          <h1 class="hero__text">
-            Order food from favourite restaurants Near you.
-          </h1>
-          <button class="button__primary">Order Now</button>
-        </div>
-      </section>
-
-      <!-- Explore Menu -->
-      <section class="explore__menu__container">
-        <h1 class="explore__menu__text">Explore Our Menu</h1>
-        <div class="explore__menu__gradient__bg"></div>
-        <div class="explore__menu__lists">
-          <!-- Burger -->
-          <div class="food__card">
-            <div class="food__card__image__container">
-              <img src="./assets/burger.jpg" alt="burger" class="food__image" />
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Zomato - Largest Food Delivery network</title>
+        <link rel="stylesheet" href="style.css" />
+        <link
+          href="https://fonts.googleapis.com/css?family=Merriweather:300,300italic,regular,italic,700,700italic,900,900italic"
+          rel="stylesheet"
+        />
+      </head>
+      <body>
+        <header>
+          <nav class="navbar">
+            <div class="navbar__brand">
+              <img src="./assets/logo.png" alt="logo" class="brand__logo" />
             </div>
-            <div class="food__card__description">
-              <h3 class="food__title">Burger</h3>
+            <div class="navbar__nav__items">
+              <div class="nav__item">
+                <button class="button__primary hide__mobile">Order Food</button>
+                <button
+                  class="button__primary hamburger__menu mobile__only"
+                  id="hamburgermenu"
+                >
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </button>
+              </div>
+            </div>
+          </nav>
+          <div class="mobile__navbar__items mobile__only hamburger__menu__close">
+            <ul>
+              <li class="nav__item">Products</li>
+              <li class="nav__item">Restaurants</li>
+              <li class="nav__item">Pricing</li>
+              <li class="nav__item">About Us</li>
+            </ul>
+    
+            <div class="nav__item">
+              <button class="button__primary">Order Food</button>
+            </div>
+            <div class="navbar__nav__items"> 
+              <button class="nav__item button__primary">Order Food</button>
+            </div>
+          </div>
+        </header>
+        <main class="container">
+          <section class="hero__container">
+            <div class="hero__image__container">
+              <img src="./assets/hero.jpg" alt="hero image" class="hero__image" />
+              <img
+                src="./assets/svg/heroShape.svg"
+                alt="hero image shape"
+                class="hero__image__shape"
+              />
+              <img
+                src="./assets/svg/herobgpattren.svg"
+                alt="hero image shape"
+                class="hero__image__pattren"
+              />
+            </div>
+            <div class="hero__description">
+              <h1 class="hero__text">
+                Order food from favourite restaurants near you.
+              </h1>
+              <button class="button__primary">Order Now</button>
+            </div>
+          </section>
+    
+          <section class="video__footage__container">
+            <div class="video__footage">
+              <iframe
+                src="https://player.vimeo.com/video/323795266"
+                frameborder="0"
+                allow="autoplay; fullscreen; picture-in-picture"
+                allowfullscreen
+                class="chef__video"
+              ></iframe>
+            </div>
+            <div class="video__footage__text">
               <p>
-                Burger King, Mcdonalds, Burger Place
-                <span style="color: red">+3</span>
+                Your food will be prepared safely with an experienced chef, without
+                compromising on the quality and hygiene.
               </p>
             </div>
-          </div>
-          <!-- Pizza -->
-          <div class="food__card" id="pizza__card">
-            <div class="food__card__image__container">
-              <img src="./assets/pizza.jpg" alt="pizza" class="food__image" />
+          </section>
+    
+          <section class="food__list__container">
+            <h1 class="text-xl">Explore our menu</h1>
+            <div class="food__list__container__diagonal"></div>
+    
+            <div class="food__menu__card__list">
+              <div class="food__menu__card">
+                <img
+                  src="./assets/burger.jpg"
+                  alt="burger"
+                  class="food__menu__card__image"
+                />
+                <div class="food__menu__card__details">
+                  <h4 class="text-lg"><strong>Burgers</strong></h4>
+                  <p>
+                    Burger King, Mcdonalds, Burger Place
+                    <span style="color: red">+3</span>
+                  </p>
+                </div>
+              </div>
+              <div class="food__menu__card food__menu__card__move__up">
+                <img
+                  src="./assets/pizza.jpg"
+                  alt="pizza"
+                  class="food__menu__card__image"
+                />
+                <div class="food__menu__card__details">
+                  <h4 class="text-lg"><strong>Pizza</strong></h4>
+                  <p>
+                    Pizza Hut, Domino's Pizza
+                    <span style="color: red">+3</span>
+                  </p>
+                </div>
+              </div>
+              <div class="food__menu__card">
+                <img
+                  src="./assets/iceCream.jpg"
+                  alt="iceCream"
+                  class="food__menu__card__image"
+                />
+                <div class="food__menu__card__details">
+                  <h4 class="text-lg"><strong>Ice Creams</strong></h4>
+                  <p>
+                    Baskin Robins, Ibaco
+                    <span style="color: red">+3</span>
+                  </p>
+                </div>
+              </div>
             </div>
-            <div class="food__card__description">
-              <h3 class="food__title">Pizza</h3>
-              <p>
-                Pizza Hut, Domino's Pizza
-                <span style="color: red">+3</span>
-              </p>
+            <div class="food__list__view__more">View More</div>
+          </section>
+          <section class="restaurant__list__container">
+            <div class="restaurant__list__text">
+              <h4 class="text-xl">Order From 100s of restaurants</h4>
             </div>
-          </div>
-          <!-- Ice Cream -->
-          <div class="food__card">
-            <div class="food__card__image__container">
-              <img
-                src="./assets/iceCream.jpg"
-                alt="ice cream"
-                class="food__image"
-              />
+            <div class="restaurant__list__images__container">
+              <div class="restaurant__list__row_1">
+                <div>
+                  <img
+                    src="./assets/restaurant1.jpg"
+                    alt="restaurant1"
+                    class="restaurant1"
+                  />
+                </div>
+                <img
+                  src="./assets/restaurant2.jpg"
+                  alt="restaurant2"
+                  class="restaurant2"
+                />
+              </div>
+              <div class="restaurant__list__row_2">
+                <img
+                  src="./assets/restaurant3.jpg"
+                  alt="restaurant3"
+                  class="restaurant3"
+                />
+                <img
+                  src="./assets/restaurant4.jpg"
+                  alt="restaurant4"
+                  class="restaurant4"
+                />
+              </div>
             </div>
-            <div class="food__card__description">
-              <h3 class="food__title">Ice Cream</h3>
-              <p>
-                Baskin Robins, Ibaco
-                <span style="color: red">+3</span>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="explore__menu__view__more">
-          <button class="button__primary">View More</button>
-        </div>
-      </section>
-
-      <!-- Restaurant list -->
-      <section class="restaurant__container">
-        <h1 class="restaurant__text">Order From 100s of restaurants</h1>
-        <div class="restaurant__images__container">
-          <div class="restaurant__images__row__one">
-            <div class="restaurant__image__1">
-              <img
-                src="./assets/restaurant1.jpg"
-                alt="restaurant1"
-                class="restaurant__1"
-              />
-            </div>
-            <div class="restaurant__image__2">
-              <img
-                src="./assets/restaurant2.jpg"
-                alt="restaurant2"
-                class="restaurant__2"
-              />
-            </div>
-          </div>
-          <div class="restaurant__images__row__two">
-            <div class="restaurant__image__3">
-              <img
-                src="./assets/restaurant3.jpg"
-                alt="restaurant3"
-                class="restaurant__3"
-              />
-            </div>
-            <div class="restaurant__image__4">
-              <img
-                src="./assets/restaurant4.jpg"
-                alt="restaurant4"
-                class="restaurant__4"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="email__subscribe__container">
-        <div>
-          <h1 class="email__subscribe__text">Stay Updated</h1>
-          <div class="email__subscribe__input__field">
+          </section>
+          <section class="email__subcribe__container">
             <div>
-              <input type="email" placeholder="email@email.com" class="email__input" /> 
+              <h1 class="text-xl">Stay Updated</h1>
+              <div class="email__subcribe__input__field">
+                <div>
+                  <input
+                    type="email"
+                    placeholder="email@email.com"
+                    class="email__input"
+                  />
+                </div>
+                <button class="button__primary">Get Updates</button>
+              </div>
             </div>
-            <button class="button__primary">Get Updated</button>
-          </div>
-        </div>
-      </section>
+          </section>
+    
+          <section class="quote__container">
+            <div class="quote_image_overlay"></div>
+            <h3 class="quote_image_text">
+              When a man's stomach is full it makes no difference whether he is rich
+              or poor.
+            </h3>
+          </section>
+        </main>
+        <footer>
+          <img src="./assets/logo.png" alt="logo" />
+          <ul>
+            <li>Pricing</li>
+            <li>Terms and condition</li>
+            <li>Partnership</li>
+            <li>Career</li>
+            <li>Contact</li>
+          </ul>
+        </footer>
+        <script>
+          const hamburgermenu = document.getElementById("hamburgermenu");
+          const mobileNavDropDown = document.querySelector(
+            ".mobile__navbar__items"
+          );
+          window.addEventListener("click", () => {
+            if (mobileNavDropDown.classList.contains("hamburger__menu__close"))
+              return mobileNavDropDown.classList.remove("hamburger__menu__close");
+            return mobileNavDropDown.classList.add("hamburger__menu__close");
+          });
+        </script>
+      </body>
+    </html>
 
-      <section class="quote__container">
-        <div class="quote__image">
-          <img src="./assets/restaurant4.jpg" alt="quote__image" class="quote__image" />
-        </div>
-        <h3 class="quote__image__text">
-          When a man's stomach is full it makes no difference whether he is rich or poor.
-        </h3>
-      </section>
-    </main>
-    <footer>
-      <img src="./assets/logo.png " alt="logo" />
-      <p>Copyright@2021</p>
-      <ul>
-        <li>Pricing</li>
-        <li>Contact</li>
-        <li>Career</li>
-        <li>Terms and Condition</li>
-        <li>Partnership</li>
-      </ul>
-    </footer>
-  </body>
-</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
